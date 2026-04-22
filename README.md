@@ -1,7 +1,7 @@
 # Simple Address Book Application Using JavaScript
 
 ## Objective
-A simple Address Book application using plain JavaScript. All data is stored in memory using an array. No backend, database, framework, or external library is used.
+A simple Address Book application using plain JavaScript. All data is stored in memory using an array. No backend, database, framework, or external library is used. Can edit, search, view and delete contacts.
 
 ## Live Demo
 https://khinphyucinhtet.github.io/address_book_sample/
@@ -23,9 +23,8 @@ Each contact has:
 - phone as digits with at least 7 numbers
 - email in email format
 
-Phone is stored as digit text so phone numbers starting with `0` keep the first zero.
 
-## Sample Contacts
+## Sample Contacts for Viewing 
 | ID | Name | Phone | Email |
 | --- | --- | --- | --- |
 | 0001 | Pinky | 01234567 | abc@gmail.com |
@@ -37,21 +36,9 @@ Phone is stored as digit text so phone numbers starting with `0` keep the first 
 - CSS
 - JavaScript
 
-## How to Run
-1. Download or clone this repository.
-2. Open `index.html` in a web browser.
-3. Or open the live demo link above.
-
 ## Screenshot
-Add your website screenshot here.
+![Address Book Application Screenshot](image.png)
 
-Example:
-```md
-![Address Book Screenshot](screenshot.png)
-```
-
-## Short Video Explanation
-Add your video explanation link here if required.
 
 ## Note
 The contacts are stored only in browser memory. If the page is refreshed, the app returns to the sample contacts.
