@@ -3,32 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Address Book</title>
+    <title>Simple Address Book Application Using JavaScript</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main class="container">
-        <h1>Address Book</h1>
+        <h1>Simple Address Book Application Using JavaScript</h1>
 
+        <!-- add contact form -->
         <section class="box">
-            <h2>Add Contact</h2>
+            <h2 id="formTitle">Add Contact</h2>
 
             <form id="contactForm">
                 <input type="text" id="name" placeholder="Name">
                 <input type="text" id="phone" placeholder="Phone">
                 <input type="email" id="email" placeholder="Email">
-                <button type="submit">Add Contact</button>
+                <button type="submit" id="saveButton">Add Contact</button>
+                <button type="button" id="cancelButton" class="cancel-btn">Cancel</button>
             </form>
         </section>
 
+        <!-- search contact -->
         <section class="box">
             <h2>Search Contact</h2>
             <input type="text" id="search" placeholder="Search by name">
         </section>
 
+        <!-- view contacts -->
         <section class="box">
             <h2>Contact List</h2>
-            <div id="contactList"></div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contactList"></tbody>
+                </table>
+            </div>
         </section>
     </main>
 

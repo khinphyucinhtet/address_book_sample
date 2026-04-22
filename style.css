@@ -1,18 +1,25 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f2f4f7;
-    color: #222;
+    background: linear-gradient(135deg, #dbeafe, #f0f9ff);
+    color: #1f2937;
 }
 
 .container {
-    width: 90%;
-    max-width: 800px;
+    width: 92%;
+    max-width: 950px;
     margin: 30px auto;
 }
 
 h1 {
     text-align: center;
+    color: #0f172a;
+    margin-bottom: 24px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #1e3a8a;
 }
 
 .box {
@@ -20,7 +27,7 @@ h1 {
     padding: 18px;
     margin-bottom: 18px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 14px rgba(30, 64, 175, 0.12);
 }
 
 form {
@@ -30,10 +37,11 @@ form {
 }
 
 input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 11px;
+    border: 1px solid #bfdbfe;
+    border-radius: 6px;
     font-size: 15px;
+    outline-color: #60a5fa;
 }
 
 form input {
@@ -49,15 +57,23 @@ form input {
 button {
     padding: 10px 14px;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     background-color: #2563eb;
     color: white;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 button:hover {
     background-color: #1d4ed8;
+}
+
+.edit-btn {
+    background-color: #0891b2;
+}
+
+.edit-btn:hover {
+    background-color: #0e7490;
 }
 
 .delete-btn {
@@ -68,17 +84,46 @@ button:hover {
     background-color: #b91c1c;
 }
 
-.contact-card {
-    border: 1px solid #ddd;
-    border-radius: 6px;
+.cancel-btn {
+    display: none;
+    background-color: #64748b;
+}
+
+.cancel-btn:hover {
+    background-color: #475569;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
     padding: 12px;
-    margin-bottom: 10px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
 }
 
-.contact-card p {
-    margin: 6px 0;
+th {
+    background-color: #eff6ff;
+    color: #1e3a8a;
 }
 
-.empty-text {
-    color: #666;
+tr:hover {
+    background-color: #f8fafc;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.empty-row {
+    text-align: center;
+    color: #64748b;
 }
