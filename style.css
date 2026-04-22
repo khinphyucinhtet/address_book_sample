@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f4f7;
+    color: #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.box {
+    background-color: white;
+    padding: 18px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+form input {
+    flex: 1;
+    min-width: 160px;
+}
+
+#search {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.delete-btn {
+    background-color: #dc2626;
+}
+
+.delete-btn:hover {
+    background-color: #b91c1c;
+}
+
+.contact-card {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    margin: 6px 0;
+}
+
+.empty-text {
+    color: #666;
+}
